@@ -1,4 +1,4 @@
-// Array Destructuring
+// Object Destructuring
 let mahasiswa = {
     nama: 'Ari Sandi Shefa Maldini',
     umur: 20
