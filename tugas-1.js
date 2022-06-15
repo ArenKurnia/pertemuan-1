@@ -2,7 +2,7 @@
 const myName = ["Aren", "Kurnia"];
 
 //Map()
-const newName = myName.map(function (myName){
+const newName = myName.map(function (myName) {
     return "1" + myName;
 });
 console.log(newName);
@@ -16,13 +16,13 @@ const myNickname = newName.find(name => name = "e");
 console.log(myNickname);
 
 //Function welcome() dan parameter callback
-function welcome(callback){
+function welcome(callback) {
     console.log("Selamat Datang ");
     callback();
 };
 
 //Panggil function welcome() dengan argumen berupa anonymous function 
 //yang mencetak nilai dari variabel myNickname
-welcome(function(){
+welcome(function () {
     console.log(myNickname);
 });
