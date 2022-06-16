@@ -23,6 +23,6 @@ function welcome(callback) {
 
 //Panggil function welcome() dengan argumen berupa anonymous function 
 //yang mencetak nilai dari variabel myNickname
-welcome(function () {
+welcome(function() {
     console.log(myNickname);
 });
