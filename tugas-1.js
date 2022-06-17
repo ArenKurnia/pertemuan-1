@@ -12,7 +12,7 @@ const filter = newName.filter(name => name.includes("i"));
 console.log(filter);
 
 //Find()
-const myNickname = newName.find(name => name = "e");
+const myNickname = newName.find(name => name.includes("e"));
 console.log(myNickname);
 
 //Function welcome() dan parameter callback
