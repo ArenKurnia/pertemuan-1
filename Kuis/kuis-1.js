@@ -1,22 +1,34 @@
+//array
 const namaSaya = ["Aren", "Kurnia", "Cantik"];
+
+//map()
 const map = namaSaya.map(function (namaSaya){
     return namaSaya + "a";
 });
 console.log(map);
 
-// [namaDepan, namaTengah, namaBelakang] = namaSaya;
-// console.log(namaDepan, namaTengah, namaBelakang);
+//Array Destructuring
+[namaDepan, namaTengah, namaBelakang] = namaSaya;
+console.log(namaDepan, namaTengah, namaBelakang);
 
-// const mahasiswa = {
-//     namaLengkap : "Aren Kurniaa Cantika",
-//     umur        : 21
-// }
-// console.log(mahasiswa);
+//Object Destructuring
+const mahasiswa = {
+    namaLengkap : "Aren Kurniaa Cantika",
+    umur        : 21
+}
+console.log(mahasiswa);
 
-// const{namaLengkap, umur} = mahasiswa;
-// console.log(namaLengkap);
-// console.log(umur);
+//cara destructuring object
+const{namaLengkap, umur} = mahasiswa;
+console.log(namaLengkap);
+console.log(umur);
 
-
-
-
+//function
+function cetak(cb){
+    console.log(namaLengkap);
+    cb();
+}
+//anonymous function
+cetak(function(){
+    console.log(umur);
+});
