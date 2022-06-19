@@ -8,12 +8,12 @@ const map = namaSaya.map(function (namaSaya){
 console.log(map);
 
 //Array Destructuring
-[namaDepan, namaTengah, namaBelakang] = namaSaya;
+[namaDepan, namaTengah, namaBelakang] = map;
 console.log(namaDepan, namaTengah, namaBelakang);
 
-//Object Destructuring
+//Array Destructuring
 const mahasiswa = {
-    namaLengkap : "Aren Kurniaa Cantika",
+    namaLengkap : (`${namaDepan} ${namaTengah} ${namaBelakang}`),
     umur        : 21
 }
 console.log(mahasiswa);
